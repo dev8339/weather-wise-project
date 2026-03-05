@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Wise Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Outfit:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="main-body">
+    <div class="sky-background">
+        <div id="sun" class="celestial sun"></div>
+        <div id="moon" class="celestial moon"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+    </div>
+
+    <div class="app-container">
+        <header class="centered-branding">
+            <img src="1000043134.png" alt="Logo" class="hero-logo">
+            <h1 class="hero-title">WEATHER WISE</h1>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter City Name...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div id="weather-display" class="hidden">
+            <div class="main-glass-card">
+                <div id="mode-badge" class="badge">Day Mode</div>
+                <h2 id="city-name">--</h2>
+                <div class="time-wrap">
+                    <p id="local-time">--:--</p>
+                    <p id="local-date">---</p>
+                </div>
+                
+                <div class="temp-section">
+                    <h1 id="temp-main">--°C</h1>
+                    <p id="condition-desc">---</p>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-item"><i class="fas fa-droplet"></i> <p>Humidity</p><span id="humidity">--%</span></div>
+                    <div class="stat-item"><i class="fas fa-wind"></i> <p>Wind</p><span id="wind">-- km/h</span></div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-grid" class="forecast-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

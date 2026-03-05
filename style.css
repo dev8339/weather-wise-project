@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d3e585, #50e3da, #f380c5);
+    display: flex; justify-content: center; align-items: flex-start;
+    padding-top: 50px; overflow-x: hidden; transition: 1s ease;
+}
+
+/* Centered Branding */
+.centered-branding { text-align: center; margin-bottom: 30px; }
+.hero-logo { width: 120px; filter: drop-shadow(0 0 15px rgb(255, 255, 255)); animation: float 4s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+.hero-title {
+    font-family: 'Righteous'; font-size: 3rem; color: #ffffff; letter-spacing: 5px; margin-top: 10px;
+    text-shadow: 2px 2px 0px #181ecf, 4px 4px 0px rgb(86, 87, 88);
+}
+
+/* Sky Elements */
+.celestial {
+    position: absolute; top: 10%; right: 10%; width: 100px; height: 100px;
+    border-radius: 50%; transition: 1.5s ease; animation: move 20s linear infinite alternate;
+}
+.sun { background: radial-gradient(#ffd700, #f59e0b); box-shadow: 0 0 50px #f59e0b; }
+.moon { background: radial-gradient(#f1f5f9, #94a3b8); box-shadow: 0 0 40px white; display: none; }
+@keyframes move { from { transform: translate(0,0); } to { transform: translate(-50px, 30px); } }
+
+/* Main Glass Card */
+.app-container { width: 95%; max-width: 550px; z-index: 10; }
+.main-glass-card {
+    background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 40px;
+    padding: 40px; text-align: center; color: white; box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+#temp-main { font-size: 5.5rem; font-weight: 900; background: linear-gradient(to bottom, #fff, #bfdbfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.search-box { display: flex; background: white; border-radius: 20px; padding: 5px; margin-bottom: 30px; }
+.search-box input { flex: 1; border: none; padding: 12px; font-size: 1rem; border-radius: 20px; outline: none; }
+.search-box button { background: #f9b0d1; color: white; border: none; padding: 0 20px; border-radius: 15px; cursor: pointer; }
+
+/* Forecast Cards */
+.forecast-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 10px; margin-top: 20px; }
+.f-card { background: rgba(255,255,255,0.15); padding: 15px 5px; border-radius: 20px; transition: 0.3s; }
+.f-card:hover { transform: scale(1.1); background: rgba(255,255,255,0.3); }
+
+.hidden { display: none; }
+.badge { display: inline-block; padding: 5px 15px; background: #ffffff; color: #000000; border-radius: 50px; font-weight: bold; margin-bottom: 20px; }
