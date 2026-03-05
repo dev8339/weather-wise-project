@@ -13,7 +13,9 @@ Dynamic Environments: Automatically toggles between Day/Night modes with CSS-ani
 🛠 Tech Stack
 
 Frontend: HTML5, CSS3 (Keyframe Animations, Flexbox, Grid).
+
 Logic: Vanilla JavaScript (ES6+), Asynchronous Fetch API.
+
 Data Source: OpenWeatherMap API.
 
 
