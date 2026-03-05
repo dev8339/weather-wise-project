@@ -1,4 +1,4 @@
-Weather Wise Pro 🌤️
+## WEATHER WISE 🌤️
 
 A high-performance, responsive weather dashboard designed to provide real-time meteorological data with a focus on visual precision and dynamic UI.
 
@@ -23,5 +23,5 @@ index.html: Main structure and semantic layout.
 style.css: Animations, glassmorphism, and 3D visual effects.
 script.js: Logic for API integration, timezone calculations, and DOM manipulation
 
-  ## live demo
+  # LIVE DEMO
  https://dev8339.github.io/weather-wise-project/
