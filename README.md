@@ -23,3 +23,5 @@ index.html: Main structure and semantic layout.
 style.css: Animations, glassmorphism, and 3D visual effects.
 script.js: Logic for API integration, timezone calculations, and DOM manipulation
 
+  ## live demo
+ https://dev8339.github.io/weather-wise-project/
